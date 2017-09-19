@@ -1,5 +1,7 @@
 let pkgs = import <nixpkgs> {}; in
 
+# These custom Python packages are by Zander Bolgar.
+
 let customPythonPackages = (pythonPackages: builtins.attrValues rec {
   nanomsg = let
     pname = "nanomsg";
